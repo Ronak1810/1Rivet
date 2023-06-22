@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+	<bean class="com.maven.Spring.Student" name="s">
+		<property name="id">
+			<value>101</value>
+		</property>
+		<property name="name">
+			<value>ronak</value>
+		</property>
+		<property name="email">
+			<value>ronak@gmail.com</value>
+		</property>
+		<property name="address">
+			<value>Lalpur</value>
+		</property>
+		<property name="subject" ref="ss2" />
+	</bean>
+	
+	
+	<bean class="com.maven.Spring.Subject" name="ss2">
+		<property name="maths" value="1month" />
+		<property name="science" value="1.5month" />
+		<property name="english" value="2month" />
+	</bean>
+
+
+
+
+</beans>

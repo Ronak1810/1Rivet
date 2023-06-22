@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=Ronak Deskbook;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: Ronak@123
+  jpa:
+    show-sql: true
+    hibernate:
+     ddl-auto: validate
+     naming:
+       physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+server:
+   port: 9443
+
+          
+          
